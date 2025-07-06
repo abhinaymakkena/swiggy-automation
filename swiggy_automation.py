@@ -541,9 +541,9 @@ class SwiggyAutomation:
                     return False
                 logging.info(f"Completed: {step_name}")
             
-            logging.info("✅ Automation completed successfully!")
-            print("🎉 Automation complete! The item has been added to cart and home address selected.")
-            print("📋 You can now review the order and proceed with payment manually.")
+            logging.info(" Automation completed successfully!")
+            print(" Automation complete! The item has been added to cart and home address selected.")
+            print(" You can now review the order and proceed with payment manually.")
             return True
             
         except Exception as e:
@@ -569,9 +569,9 @@ def main():
     try:
         success = automation.run_automation(restaurant_name=RESTAURANT_NAME)
         if success:
-            print("✅ Automation completed successfully!")
+            print("Automation completed successfully!")
         else:
-            print("❌ Automation failed. Check logs for details.")
+            print(" Automation failed. Check logs for details.")
     
     except KeyboardInterrupt:
         logging.info("Automation interrupted by user")
